@@ -12,6 +12,10 @@ on:
 env:
   RUSTFLAGS: -Dwarnings
   RUST_BACKTRACE: 1
+  V_HOST: localhost
+  V_PORT: 5433
+  V_USER: dbadmin
+  V_DATABASE: VMart
 
 jobs:
   rustfmt:
