@@ -11,7 +11,8 @@ use super::*;
 use crate::binary_copy::{BinaryCopyInWriter, BinaryCopyOutIter};
 use fallible_iterator::FallibleIterator;
 
-const CONNECTION_STRING: &str = "host=engdev2.verticacorp.com port=32780 user=kkarch dbname=verticadb21435";
+const CONNECTION_STRING: &str =
+    "host=engdev2.verticacorp.com port=32780 user=kkarch dbname=verticadb21435";
 
 #[test]
 fn prepare() {
