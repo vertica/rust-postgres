@@ -435,8 +435,9 @@ fn portal() {
     assert_eq!(rows.len(), 3);
     assert_eq!(rows[0].get::<_, i64>(0), 1);
     assert_eq!(rows[1].get::<_, i64>(0), 2);
-    assert_eq!(rows[1].get::<_, i64>(0), 2);
+    assert_eq!(rows[2].get::<_, i64>(0), 3);
 
+    // Vertica gets all rows, not just two for the query
     let rows = transaction.query_portal(&portal, 2).unwrap();
     assert_eq!(rows.len(), 3);
     assert_eq!(rows[0].get::<_, i64>(0), 1);
